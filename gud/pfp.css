@@ -1,0 +1,63 @@
+section {
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(40, 84, 53);
+  background: linear-gradient(black, rgb(108, 0, 0));
+  justify-content: center;
+  margin-left: 10%;
+  position: relative;
+}
+.clothes {
+  border: 5px dashed darkcyan;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  flex-wrap: wrap;
+}
+
+.gud {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 10px;
+  background-image: url(ppl/brookes-party-table.webp);
+}
+.die {
+  justify-self: center;
+  align-content: center;
+  width: 400px;
+}
+.b {
+  height: 20px;
+  margin: 10px;
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+}
+.head {
+  height: 30px;
+  background-image: url(ppl/meat.jpg);
+  margin: 0 10% 0 10%;
+  font-size: 20px;
+  color: black;
+}
+.g {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+table {
+  align-items: center;
+  height: 600px;
+}
+p {
+  color: white;
+  font-size: 30px;
+  margin: 20px;
+}
