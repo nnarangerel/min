@@ -1,0 +1,45 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  width: 300px;
+  height: 300px;
+}
+.body {
+  background-color: blueviolet;
+  border: 5px double brown;
+  border-radius: 5vh;
+  width: 60vh;
+  position: relative;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu1 {
+  display: flex;
+  flex-direction: row;
+}
+.in1 {
+  background-color: aqua;
+  flex-grow: 3;
+}
+.img1 {
+  flex-grow: 2;
+  background-color: bisque;
+}
+.menu2 {
+  display: flex;
+  flex-direction: row;
+}
+.in2 {
+  background-color: aqua;
+  flex-grow: 2;
+}
+.img2 {
+  flex-grow: 3;
+  background-color: bisque;
+}
