@@ -19,7 +19,6 @@
 // console.log(rezult);
 // alert(rezult);
 
-
 // let B = prompt("B=?");
 // let C = prompt("C=?");
 // let D = prompt("D=?");
@@ -27,7 +26,7 @@
 // B = parseFloat(B);
 // C = parseFloat(C);
 // D = parseFloat(D);
- 
+
 // let A = (B*C)-D;
 // let ankwer ="answer="+A;
 // console.log(ankwer);
@@ -46,12 +45,12 @@
 // let s = '1234'
 // let o = s[3]+s[2]+s[1]+s[0]
 
-// let falsy= 
+// let falsy=
 //   [undefined,
 //     NaN,
 //     false,
 //     undefined,
-//     null,  
+//     null,
 //     0
 // ]
 // let car = {
@@ -61,17 +60,16 @@
 // }
 // const numbers = [1,2,3,4,5,6]
 // const average = (numbers)=>{
-     
+
 //     for (let i = 0; i < numbers.length; i++) {
-//         console.log = [i]; 
+//         console.log = [i];
 //     }
-    
-    
+
 // }
 
 // const output = average(numbers)
 // alert(output)
- 
+
 // let a=3
 // let b =6
 // if (a<b){console.log(b)}
@@ -88,17 +86,52 @@
 // else {console.log(result2)
 // alert(result2)}
 
-const number=[2,3,123,545,745,745,7,4,5]
-const max=(number) =>{
-    let maxNumber = number[0];    
-    for (let i = 1; i < number.length; i++) {
-        const element = number[i];
-        if(element > maxNumber )
-        maxNumber = element
-        
-    }
-    return maxNumber;
-}
+// const number=[2,3,123,545,745,745,7,4,5]
+// const result = max(too)
+// alert(result)
 
-const result = max(number)
-alert(result)
+// Loop
+// {
+// Find max
+
+// push max
+
+// remove max from array
+
+// }
+
+let too = [2, 234, 5, 43, 1];
+
+const max = (too) => {
+  let maxNumber = too[0];
+  for (let i = 1; i < too.length; i++) {
+    const element = too[i];
+    if (element > maxNumber) maxNumber = element;
+  }
+  return maxNumber;
+};
+
+const sort = (input) => {
+  let array = input;
+  // Loop
+  // {
+  // Find max
+
+  // push max
+
+  // remove max from array
+
+  // }
+  let result = [];
+  for (let i = 0; i < input.length; i++) {
+    const element = input[i];
+    const maxNumber = max(array);
+    result.push(maxNumber);
+
+    // remove max from array
+    const newArray = array.filter((el) => el !== maxNumber);
+    array = newArray;
+  }
+  return result;
+};
+console.log(sort(too));
