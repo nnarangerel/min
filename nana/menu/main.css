@@ -1,14 +1,18 @@
 .title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  height: 20vh;
 }
 .img {
   width: 200px;
   height: 20vh;
   justify-self: start;
+  padding-left: 2px;
 }
-
+.body::-webkit-scrollbar {
+  display: none;
+}
 .body {
   background-color: blueviolet;
   border: 5px double brown;
@@ -20,9 +24,25 @@
   display: flex;
   flex-direction: column;
 }
+.sticky {
+  position: fixed;
+  top: 4;
+  overflow: hidden;
+  width: 90vw;
+  background-color: gold;
+  border-radius: 5vh;
+  height: 100px;
+}
+.sticky img {
+  width: 100px;
+}
+#section-1 {
+  padding-top: 100px;
+}
 body {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 .menu1 {
   display: flex;
@@ -109,6 +129,9 @@ body {
   height: 7vh;
   display: flex;
   justify-content: center;
+}
+.button {
+  padding-right: 20px;
 }
 #li {
   display: flex;
