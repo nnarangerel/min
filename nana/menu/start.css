@@ -1,22 +1,44 @@
-body {
-    background-image: url();
-    background-color: brown;
-    height: 100vh;
-  }
-  section {
-    background-color: darkolivegreen;
-    width: 60vh;
-    height: 40vh;
-    border: 10px double black;
-    border-radius: 5vh;
-  }
-  .center {
-    display: flex;
+.menu {
+  background-color: blueviolet;
+  border: 5px double brown;
+  border-radius: 5vh;
+  width: 90vw;
+  height: 97vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
 
-    justify-content: center;
-    align-items: center;
-  }
-  img {
-    background-color: bisque;
-  }
-  
+.div1 {
+  position: fixed;
+  top: 4;
+  overflow: hidden;
+  width: 90vw;
+  background-color: gold;
+  border-radius: 4vh 4vh 0 0;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.div2 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+}
+.in1 {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+.in2 {
+  background-color: aqua;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  flex-grow: 3;
+}
+.in2::-webkit-scrollbar {
+  display: none;
+}
